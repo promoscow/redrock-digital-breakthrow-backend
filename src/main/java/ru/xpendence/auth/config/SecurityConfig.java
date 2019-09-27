@@ -13,12 +13,7 @@ import ru.xpendence.auth.base.RoleType;
 import ru.xpendence.auth.security.JwtConfigurer;
 import ru.xpendence.auth.security.JwtTokenService;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 12:35
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)

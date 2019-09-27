@@ -6,12 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ru.xpendence.auth.service.UserService;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 11:25
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Service
 public class JwtDetailsService implements UserDetailsService {
 

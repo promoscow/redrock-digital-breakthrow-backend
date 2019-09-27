@@ -2,7 +2,6 @@ package ru.xpendence.auth.security;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
 
 import javax.servlet.FilterChain;
@@ -13,12 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Objects;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 12:22
- * e-mail: v.chernyshov@pflb.ru
- */
+
 public class JwtTokenFilter extends GenericFilterBean {
 
     private final JwtTokenService jwtTokenService;

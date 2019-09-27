@@ -13,12 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 11:27
- * e-mail: v.chernyshov@pflb.ru
- */
+
 public class JwtUser implements UserDetails {
 
     private final Long id;

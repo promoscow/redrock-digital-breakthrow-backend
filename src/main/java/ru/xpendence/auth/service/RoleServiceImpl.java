@@ -7,12 +7,7 @@ import ru.xpendence.auth.repository.RoleRepository;
 
 import javax.persistence.EntityNotFoundException;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 11:03
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Service
 public class RoleServiceImpl implements RoleService {
 

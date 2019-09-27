@@ -10,12 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.time.LocalDateTime;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.09.19
- * Time: 19:58
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity

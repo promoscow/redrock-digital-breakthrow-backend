@@ -4,16 +4,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.xpendence.auth.dto.LoginDto;
-import ru.xpendence.auth.dto.PythonTestDto;
 import ru.xpendence.auth.dto.UserDto;
 import ru.xpendence.auth.service.AuthService;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 08.09.19
- * Time: 15:50
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @CrossOrigin
 @RestController
 @RequestMapping("/auth")

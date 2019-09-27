@@ -6,12 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.09.19
- * Time: 19:55
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
