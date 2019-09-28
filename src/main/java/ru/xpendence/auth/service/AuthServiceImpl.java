@@ -89,15 +89,15 @@ public class AuthServiceImpl implements AuthService {
 
     @Scheduled(initialDelay = 1000L, fixedDelay = 60000L)
     public void testPython() {
-        String url = "http://smth:5000/test/1";
-        log.info("testing python, url: {}", url);
-        PythonTestDto pythonTestDto = restTemplate.getForObject(url, PythonTestDto.class);
-        String result = "";
-        try {
-            result = new ObjectMapper().writeValueAsString(pythonTestDto);
-        } catch (JsonProcessingException e) {
-            e.getMessage();
-        }
-        log.info("response: {}", result);
+//        String url = "http://smth:5000/test/1";
+//        log.info("testing python, url: {}", url);
+//        PythonTestDto pythonTestDto = restTemplate.getForObject(url, PythonTestDto.class);
+//        String result = "";
+//        try {
+//            result = new ObjectMapper().writeValueAsString(pythonTestDto);
+//        } catch (JsonProcessingException e) {
+//            e.getMessage();
+//        }
+//        log.info("response: {}", result);
     }
 }
