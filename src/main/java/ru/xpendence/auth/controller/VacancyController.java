@@ -54,15 +54,15 @@ public class VacancyController {
     public Map<String, String> returnKeyWord() {
         Map<String, String> map = new HashMap<>();
         map.put("JAVA DEVELOPER", "java");
-        map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", "Test Engineer");
-        map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", "Test Engineer");
-        map.put("IT-ИНЖЕНЕР", "IT ENGINEER");
-        map.put("СИСТЕМНЫЙ АНАЛИТИК", "SYSTEMS ANALYST");
+        map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", "tdd");
+        map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", "tdd");
+        map.put("IT-ИНЖЕНЕР", "IT");
+        map.put("СИСТЕМНЫЙ АНАЛИТИК", "ANALYST");
         map.put("PYTHON РАЗРАБОТЧИК", "python");
         map.put("FRONTEND DEVELOPER", "react");
-        map.put("QA-ИНЖЕНЕР", "Test Engineer");
-        map.put("БИЗНЕС-АНАЛИТИК", "BUSINESS ANALYST");
-        map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "SYSTEM ENGINEER");
+        map.put("QA-ИНЖЕНЕР", "tdd");
+        map.put("БИЗНЕС-АНАЛИТИК", "ANALYST");
+        map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "ENGINEER");
         return map;
     }
 
