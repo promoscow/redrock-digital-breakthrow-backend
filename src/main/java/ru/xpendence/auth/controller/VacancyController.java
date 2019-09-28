@@ -35,7 +35,9 @@ public class VacancyController {
         List<Vacancy> vacancyList = new ArrayList<>();
         Person person = personService.getOnePerson(id);
         PersonDto personDto = personMapper.toDto(person);
-        VacancyDto result = restTemplate.postForObject("http://smth:5000/foo", personDto, VacancyDto.class);
+//        VacancyDto result = restTemplate.postForObject("http://smth:5000/foo", personDto, VacancyDto.class);
+        VacancyDto result = new VacancyDto();
+        result.setName(returnMock());
         Map<String, Double> map = result.getName();
         for (Map.Entry mapElement : map.entrySet()) {
             String key = (String) mapElement.getKey();
@@ -62,6 +64,20 @@ public class VacancyController {
         map.put("QA-ИНЖЕНЕР", "Test Engineer");
         map.put("БИЗНЕС-АНАЛИТИК", "BUSINESS ANALYST");
         map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "SYSTEM ENGINEER");
+        return map;
+    }
+
+    public Map<String, Double> returnMock(){
+        Map<String, Double> map = new HashMap<>();
+        map.put("JAVA DEVELOPER", 0.03785254937332088);
+        map.put("FRONTEND DEVELOPER", 0.11431410164191545);
+        map.put("IT-ИНЖЕНЕР", 0.0381351135565087);
+        map.put("PYTHON РАЗРАБОТЧИК", 0.17548899927149625);
+        map.put("QA-ИНЖЕНЕР", 0.20143894703954274);
+        map.put("БИЗНЕС-АНАЛИТИК", 0.26482843991856275);
+        map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", 0.00995102071853255);
+        map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", 0.048725766608213664);
+        map.put("СИСТЕМНЫЙ АНАЛИТИК", 0.1092650618719052);
         return map;
     }
 }
