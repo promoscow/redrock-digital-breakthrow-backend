@@ -9,12 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.xpendence.auth.entity.User;
 import ru.xpendence.auth.service.UserService;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 24.09.19
- * Time: 20:59
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @RestController
 @RequestMapping("/user")
 public class UserController {

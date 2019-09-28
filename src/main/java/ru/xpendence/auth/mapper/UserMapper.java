@@ -7,12 +7,7 @@ import ru.xpendence.auth.entity.User;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.09.19
- * Time: 20:22
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Component
 public class UserMapper {
 

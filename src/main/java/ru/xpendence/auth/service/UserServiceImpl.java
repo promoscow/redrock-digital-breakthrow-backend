@@ -12,12 +12,7 @@ import ru.xpendence.auth.repository.UserRepository;
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 10:57
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Service
 public class UserServiceImpl implements UserService {
 

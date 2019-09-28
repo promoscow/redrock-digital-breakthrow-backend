@@ -8,12 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 10.09.19
- * Time: 21:31
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor

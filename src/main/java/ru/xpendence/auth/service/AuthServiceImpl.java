@@ -18,12 +18,7 @@ import ru.xpendence.auth.security.JwtTokenService;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 08.09.19
- * Time: 15:50
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Service
 @Slf4j
 public class AuthServiceImpl implements AuthService {

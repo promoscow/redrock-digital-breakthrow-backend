@@ -6,12 +6,7 @@ import ru.xpendence.auth.repository.RegistrationTokenRepository;
 
 import javax.persistence.EntityNotFoundException;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.09.19
- * Time: 20:55
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Service
 public class RegistrationTokenServiceImpl implements RegistrationTokenService {
 

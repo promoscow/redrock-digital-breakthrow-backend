@@ -12,12 +12,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 10:45
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @Entity
 @Table(name = "users")
 @SQLDelete(sql = "update users set active = 0 where id = ?")

@@ -11,12 +11,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-/**
- * Author: Vyacheslav Chernyshov
- * Date: 17.08.19
- * Time: 10:41
- * e-mail: v.chernyshov@pflb.ru
- */
+
 @MappedSuperclass
 @Data
 @EqualsAndHashCode
