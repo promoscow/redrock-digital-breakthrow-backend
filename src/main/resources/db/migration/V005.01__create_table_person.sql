@@ -8,6 +8,6 @@ create table person
     age int null,
     gender   varchar(255) null,
     education   varchar(255) null,
-    profession   varchar(255) null,
+    from_profession   varchar(255) null,
     email   varchar(255) null
 );

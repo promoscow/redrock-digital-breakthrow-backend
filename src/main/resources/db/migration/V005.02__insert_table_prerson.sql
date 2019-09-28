@@ -1,4 +1,4 @@
-INSERT INTO person (age, gender, education, profession, email)
+INSERT INTO person (age, gender, education, from_profession, email)
 VALUES (18, 'FEMALE', 'SECONDARY', 'БУХГАЛТЕР','2262288@gmail.com'),
        (25, 'MALE', 'HIGH', 'СМЕТЧИК','2262288@gmail.com'),
        (43, 'MALE', 'SECONDARY', 'СТАТИСТИК','2262288@gmail.com'),
