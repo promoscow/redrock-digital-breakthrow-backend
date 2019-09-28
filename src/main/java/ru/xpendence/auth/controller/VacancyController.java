@@ -42,7 +42,6 @@ public class VacancyController {
             String keyword = returnKeyWord().get(key);
             vacancyList.add(new Vacancy(id, key, done, keyword));
         }
-        System.out.println(result);
         return vacancyList
                 .stream()
                 .limit(5)
