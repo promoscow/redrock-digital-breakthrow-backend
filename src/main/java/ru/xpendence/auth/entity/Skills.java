@@ -18,4 +18,5 @@ public class Skills {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private Long person_id;
 }
