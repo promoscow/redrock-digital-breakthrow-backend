@@ -35,7 +35,7 @@ public class VacancyController {
         Person person = personService.getOnePerson(id);
         PersonDto personDto = personMapper.toDto(person);
         log.info("Send to url {} ", URL);
-        VacancyDto result = restTemplate.postForObject(URL, personDto, VacancyDto.class);
+        VacancyDto result = getVacancyDto(personDto);
         log.info("Get dto {} ", result);
         Map<String, Double> map = result.getName();
         for (Map.Entry mapElement : map.entrySet()) {
@@ -52,6 +52,16 @@ public class VacancyController {
                 .collect(Collectors.toList());
     }
 
+    public VacancyDto getVacancyDto(PersonDto personDto) {
+        return restTemplate.postForObject(URL, personDto, VacancyDto.class);
+    }
+
+    public VacancyDto getVacancyDtoMock() {
+        VacancyDto result = new VacancyDto();
+        result.setName(returnMock());
+        return result;
+    }
+
     public Map<String, String> returnKeyWord() {
         Map<String, String> map = new HashMap<>();
         map.put("JAVA DEVELOPER", "java");
@@ -64,6 +74,20 @@ public class VacancyController {
         map.put("QA-ИНЖЕНЕР", "tdd");
         map.put("БИЗНЕС-АНАЛИТИК", "analytics");
         map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "analytics");
+        return map;
+    }
+
+    public Map<String, Double> returnMock() {
+        Map<String, Double> map = new HashMap<>();
+        map.put("JAVA DEVELOPER", 0.43785254937332088);
+        map.put("FRONTEND DEVELOPER", 0.31431410164191545);
+        map.put("IT-ИНЖЕНЕР", 0.5381351135565087);
+        map.put("PYTHON РАЗРАБОТЧИК", 0.77548899927149625);
+        map.put("QA-ИНЖЕНЕР", 0.80143894703954274);
+        map.put("БИЗНЕС-АНАЛИТИК", 0.66482843991856275);
+        map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", 0.70995102071853255);
+        map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", 0.548725766608213664);
+        map.put("СИСТЕМНЫЙ АНАЛИТИК", 0.8092650618719052);
         return map;
     }
 }
