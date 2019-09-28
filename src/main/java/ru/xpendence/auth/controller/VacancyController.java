@@ -42,7 +42,7 @@ public class VacancyController {
         }
         return vacancyList
                 .stream()
-                .sorted(Comparator.comparingLong(Vacancy::getPercentage))
+                .sorted(Comparator.comparingLong(Vacancy::getPercentage).reversed())
                 .limit(5)
                 .collect(Collectors.toList());
     }
