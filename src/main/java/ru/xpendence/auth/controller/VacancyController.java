@@ -41,7 +41,7 @@ public class VacancyController {
         for (Map.Entry mapElement : map.entrySet()) {
             String key = (String) mapElement.getKey();
             Double percent = (Double) mapElement.getValue();
-            Long done = Math.round(percent * 100);
+            Long done = Math.round(percent);
             String keyword = returnKeyWord().get(key);
             vacancyList.add(new Vacancy(id, key, done, keyword));
         }
