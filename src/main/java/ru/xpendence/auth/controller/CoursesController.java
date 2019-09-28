@@ -1,5 +1,6 @@
 package ru.xpendence.auth.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +14,9 @@ import java.util.Set;
 
 @CrossOrigin
 @RestController
+@RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class CoursesController {
-    @Autowired
-    private CoursesService coursesService;
+    private final CoursesService coursesService;
 
     @GetMapping("/courses")
     public Set<CoursesDto> getListCourses(@RequestParam String query) throws IOException {

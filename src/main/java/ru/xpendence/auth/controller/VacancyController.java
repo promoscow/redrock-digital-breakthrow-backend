@@ -1,5 +1,6 @@
 package ru.xpendence.auth.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,13 +22,11 @@ import java.util.stream.Collectors;
 
 @CrossOrigin
 @RestController
+@RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class VacancyController {
-    @Autowired
-    private PersonService personService;
-    @Autowired
-    private PersonMapper personMapper;
-    @Autowired
-    private RestTemplate restTemplate;
+    private final PersonService personService;
+    private final PersonMapper personMapper;
+    private final RestTemplate restTemplate;
 
 
     @GetMapping("/vacancies")

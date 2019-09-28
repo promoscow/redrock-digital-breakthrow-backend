@@ -1,5 +1,6 @@
 package ru.xpendence.auth.controller;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,11 +14,10 @@ import java.util.stream.Collectors;
 
 @CrossOrigin
 @RestController
+@RequiredArgsConstructor(onConstructor_ = {@Autowired})
 public class SkillsController {
-    @Autowired
-    private SkillsRepository skillsRepository;
-    @Autowired
-    private SkillMapper skillMapper;
+    private final SkillsRepository skillsRepository;
+    private final SkillMapper skillMapper;
 
     @GetMapping("/skills")
     public List<SkillDto> getAllSkills() {
