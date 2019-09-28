@@ -14,10 +14,7 @@ import ru.xpendence.auth.entity.Person;
 import ru.xpendence.auth.mapper.PersonMapper;
 import ru.xpendence.auth.service.PersonService;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @CrossOrigin
@@ -47,6 +44,7 @@ public class VacancyController {
         }
         return vacancyList
                 .stream()
+                .sorted(Comparator.comparingLong(Vacancy::getPercentage))
                 .limit(5)
                 .collect(Collectors.toList());
     }
@@ -57,12 +55,12 @@ public class VacancyController {
         map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", "tdd");
         map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", "tdd");
         map.put("IT-ИНЖЕНЕР", "IT");
-        map.put("СИСТЕМНЫЙ АНАЛИТИК", "ANALYST");
+        map.put("СИСТЕМНЫЙ АНАЛИТИК", "analytics");
         map.put("PYTHON РАЗРАБОТЧИК", "python");
         map.put("FRONTEND DEVELOPER", "react");
         map.put("QA-ИНЖЕНЕР", "tdd");
-        map.put("БИЗНЕС-АНАЛИТИК", "ANALYST");
-        map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "ENGINEER");
+        map.put("БИЗНЕС-АНАЛИТИК", "analytics");
+        map.put("СИСТЕМНЫЙ ИНЖЕНЕР", "analytics");
         return map;
     }
 
