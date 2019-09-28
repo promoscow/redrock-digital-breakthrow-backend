@@ -24,6 +24,7 @@ import java.util.List;
 //    private List<String> skills;
 //    @Enumerated(EnumType.STRING)
 //    private Education education;
-// private String profession;
+//    private String profession;
+//    private String email;
 //
 //}
