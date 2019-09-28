@@ -9,6 +9,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
 
+
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor

@@ -1,5 +1,6 @@
 package ru.xpendence.auth.util;
 
+
 public class PasswordUtils {
 
 //    public static void main(String[] args) {

@@ -7,7 +7,6 @@ import ru.xpendence.auth.entity.User;
 import java.util.Objects;
 import java.util.function.Consumer;
 
-
 @Component
 public class UserMapper {
 

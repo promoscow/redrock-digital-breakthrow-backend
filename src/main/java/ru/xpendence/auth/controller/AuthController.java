@@ -4,7 +4,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ru.xpendence.auth.dto.LoginDto;
-import ru.xpendence.auth.dto.PythonTestDto;
 import ru.xpendence.auth.dto.UserDto;
 import ru.xpendence.auth.service.AuthService;
 
