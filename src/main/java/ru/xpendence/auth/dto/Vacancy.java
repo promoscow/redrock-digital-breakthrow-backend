@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 public class Vacancy {
     private Long id;
     private String name;
-    private Long percent;
+    private Long percentage;
     private String keyWord;
 }
