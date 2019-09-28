@@ -35,7 +35,7 @@ public class VacancyController {
         List<Vacancy> vacancyList = new ArrayList<>();
         Person person = personService.getOnePerson(id);
         PersonDto personDto = personMapper.toDto(person);
-        VacancyDto result = restTemplate.postForObject("http://localhost:5000/foo", personDto, VacancyDto.class);
+        VacancyDto result = restTemplate.postForObject("http://smth:5000/foo", personDto, VacancyDto.class);
         Map<String, Double> map = result.getName();
         for (Map.Entry mapElement : map.entrySet()) {
             String key = (String) mapElement.getKey();
