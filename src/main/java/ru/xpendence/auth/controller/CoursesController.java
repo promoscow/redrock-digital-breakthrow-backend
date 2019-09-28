@@ -1,9 +1,7 @@
 package ru.xpendence.auth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.xpendence.auth.dto.CoursesDto;
 import ru.xpendence.auth.service.CoursesService;
 
@@ -15,8 +13,8 @@ public class CoursesController {
     @Autowired
     private CoursesService coursesService;
 
-    @PostMapping("/courses")
-    public Set<CoursesDto> getListCourses(@RequestBody String query) throws IOException {
+    @GetMapping("/courses")
+    public Set<CoursesDto> getListCourses(@RequestParam String query) throws IOException {
         String url = "https://www.coursera.org/";
         return coursesService.getListUrl(url, query);
     }
