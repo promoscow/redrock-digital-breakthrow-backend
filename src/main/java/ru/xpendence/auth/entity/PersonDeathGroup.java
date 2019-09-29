@@ -19,4 +19,5 @@ public class PersonDeathGroup {
     private Long id;
     private String name;
     private String profession;
+    private String email;
 }
