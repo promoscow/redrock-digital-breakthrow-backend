@@ -30,7 +30,7 @@ public class SendEmailService {
                 email,
                 "slava_rossii@list.ru",
                 "Предложение курсов для переквалификации",
-                "Список курсов - " +emailDto.getUrls().stream().collect(Collectors.joining("-", "{", "}"))
+                "Список курсов: \n" + emailDto.getUrls().stream().collect(Collectors.joining("\n", "{", "}"))
         );
         log.info("sending message to url {}: {}", URL_EMAIL_SENDER, request);
         ResponseDto response = restTemplate.postForObject(
