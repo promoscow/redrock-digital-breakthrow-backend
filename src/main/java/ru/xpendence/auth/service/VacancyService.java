@@ -60,7 +60,7 @@ public class VacancyService {
         map.put("JAVA DEVELOPER", "java");
         map.put("ИНЖЕНЕР-ТЕСТИРОВЩИК", "tdd");
         map.put("НАГРУЗОЧНЫЙ ТЕСТИРОВЩИК", "tdd");
-        map.put("IT-ИНЖЕНЕР", "IT");
+        map.put("IT-ИНЖЕНЕР", "it");
         map.put("СИСТЕМНЫЙ АНАЛИТИК", "analytics");
         map.put("PYTHON РАЗРАБОТЧИК", "python");
         map.put("FRONTEND DEVELOPER", "react");
